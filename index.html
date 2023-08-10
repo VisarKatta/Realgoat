@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goat</title>
+    <style>
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 100px;
+        }
+      #goat-pic{
+        width: 200px;
+        
+      }
+      .btn{
+        display: flex;
+        gap: 1rem;
+      }
+      p{
+        display: flex;
+        justify-content: center;
+      }
+      body{
+        padding-bottom: 20rem;
+      }
+    </style>
+</head>
+<body>
+    <p>Who is the real GOAT?</p>
+    <div>
+        <img id="goat-pic" src="goat.jpg.webp" alt="">
+    </div>
+    <div class="btn">
+        <button onclick="Messi()" >Messi</button>
+        <button onclick="Ronaldo()">Ronaldo</button>
+    </div>
+    <p class="display"></p>
+</body>
+<script>
+    function Messi (){
+        document.getElementById('goat-pic').src='Realgoat.jpg'
+        document.querySelector('.display').innerHTML = 'Yes, he is a real goat'
+    }
+    function Ronaldo(){
+        document.getElementById('goat-pic').src='kneel.jpg'
+        document.querySelector('.display').innerHTML = 'Haha'
+    }
+</script>
+</html>
